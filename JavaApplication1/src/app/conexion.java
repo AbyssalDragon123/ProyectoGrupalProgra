@@ -12,8 +12,8 @@ import java.sql.SQLException;
  *
  * @author Admin
  */
-public class conexion {
-    public static Connection getconexion(){
+public class Conexion {
+    public static Connection getConexion(){
         String url ="jdbc:sqlserver://localhost:1433"
                 + "database=escuela;"
                 + "user=sa;"
