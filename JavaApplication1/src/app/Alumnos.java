@@ -1,5 +1,6 @@
 
 package app;
+<<<<<<< HEAD
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,6 +8,13 @@ import java.sql.SQLException;
 import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 
+=======
+// Importaciones para JDBC (conexión a base de datos)
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;  // Para mostrar mensajes de error/éxito
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
 
 public class Alumnos extends javax.swing.JFrame {
 
@@ -47,7 +55,11 @@ public class Alumnos extends javax.swing.JFrame {
         btnEliminar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         txtId = new javax.swing.JTextField();
+<<<<<<< HEAD
         txtTelefono1 = new javax.swing.JTextField();
+=======
+        txtTelefono = new javax.swing.JTextField();
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -170,10 +182,17 @@ public class Alumnos extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
         txtTelefono1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txtTelefono1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtTelefono1ActionPerformed(evt);
+=======
+        txtTelefono.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txtTelefono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTelefonoActionPerformed(evt);
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
             }
         });
 
@@ -208,19 +227,28 @@ public class Alumnos extends javax.swing.JFrame {
                                         .addComponent(rbMasculino, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(rbFemenino, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD
                                     .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(txtCarne, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(10, 10, 10)
                                         .addComponent(txtTelefono1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+=======
+                                    .addComponent(txtCarne, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -228,7 +256,8 @@ public class Alumnos extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtCarrera, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(43, 43, 43))))
@@ -252,6 +281,7 @@ public class Alumnos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
+<<<<<<< HEAD
                     .addComponent(txtTelefono1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -261,6 +291,18 @@ public class Alumnos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
+=======
+                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(rbMasculino)
+                            .addComponent(rbFemenino))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel8))
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
                     .addComponent(txtCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -272,7 +314,7 @@ public class Alumnos extends javax.swing.JFrame {
                     .addComponent(btnModificar)
                     .addComponent(btnEliminar)
                     .addComponent(btnLimpiar))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         jLabel2.setText("jLabel2");
@@ -343,12 +385,20 @@ public class Alumnos extends javax.swing.JFrame {
     }//GEN-LAST:event_txtIdActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+<<<<<<< HEAD
         // TODO add your handling code here:
             String Nombre = txtNombre.getText();
     String Apellido = txtApellido.getText();
     String Carrera = txtCarrera.getText();
     int Carne = Integer.parseInt(txtCarne.getText());
     int Telefono = Integer.parseInt(txtCarrera.getText());
+=======
+String Nombre = txtNombre.getText();
+    String Apellido = txtApellido.getText();
+    String Carrera = txtCarrera.getText();
+    int Carne = Integer.parseInt(txtCarne.getText());
+    int Telefono = Integer.parseInt(txtTelefono.getText());
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
     String Email = txtEmail.getText();
     String sexo;
     if(rbMasculino.isSelected()==true){
@@ -359,6 +409,7 @@ public class Alumnos extends javax.swing.JFrame {
         sexo = "M";
     }
     
+<<<<<<< HEAD
    try (Connection con = Conexion.getConexion();
      PreparedStatement ps = con.prepareStatement("INSERT INTO alumnos (Nombre, Apellido, Carrera, Carne, Telefono, Email, Sexo) VALUES (?, ?, ?, ?, ?, ?, ?)")) {
          ps.setString(1, Nombre);
@@ -379,6 +430,30 @@ public class Alumnos extends javax.swing.JFrame {
     private void txtTelefono1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefono1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTelefono1ActionPerformed
+=======
+try (Connection con = Conexion.getConexion();
+     PreparedStatement ps = con.prepareStatement("INSERT INTO alumnos (Nombre, Apellido, Carrera, Carne, Telefono, Email, Sexo) VALUES (?, ?, ?, ?, ?, ?, ?)")) {
+    
+    ps.setString(1, Nombre);
+    ps.setString(2, Apellido);
+    ps.setString(3, Carrera);
+    ps.setInt(4, Carne);
+    ps.setInt(5, Telefono);
+    ps.setString(6, Email);
+    ps.setString(7, "M"); // Valor para sexo (M/F)
+    
+    ps.executeUpdate();
+    JOptionPane.showMessageDialog(null, "Registro guardado");
+    
+} catch (SQLException e) {
+    JOptionPane.showMessageDialog(null, "Error al guardar: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+}
+    }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void txtTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTelefonoActionPerformed
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
 
     /**
      * @param args the command line arguments
@@ -450,6 +525,10 @@ public class Alumnos extends javax.swing.JFrame {
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtNombre;
+<<<<<<< HEAD
     private javax.swing.JTextField txtTelefono1;
+=======
+    private javax.swing.JTextField txtTelefono;
+>>>>>>> 7d4e8a0bd949b8310a6da3f99479a6d4aa6003da
     // End of variables declaration//GEN-END:variables
 }
