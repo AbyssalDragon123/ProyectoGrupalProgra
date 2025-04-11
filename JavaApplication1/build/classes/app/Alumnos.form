@@ -214,7 +214,6 @@
                                       <Component id="jLabel5" min="-2" pref="66" max="-2" attributes="0"/>
                                       <Component id="jLabel6" max="32767" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="txtCarne" min="-2" pref="200" max="-2" attributes="0"/>
                                       <Component id="txtTelefono" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
@@ -477,9 +476,6 @@
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Admin\OneDrive\Im&#xe1;genes\LOGO U.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
     </Component>

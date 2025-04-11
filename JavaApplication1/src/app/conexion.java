@@ -14,10 +14,14 @@ import java.sql.SQLException;
  */
 public class Conexion {
     public static Connection getConexion(){
-        String url ="jdbc:sqlserver://localhost:1433"
-                + "database=escuela;"
-                + "user=sa;"
-               + "password=1234;";
+       String url = "jdbc:sqlserver://localhost:1433;"
+    + "database=escuela;"
+    + "user=sa;"
+    + "password=1234;"
+    + "encrypt=true;"
+    + "trustServerCertificate=true;";
+
+
         try{
             Connection con = DriverManager.getConnection(url);
         return con;    
